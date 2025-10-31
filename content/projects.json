@@ -1,42 +1,36 @@
 [
   {
-    "slug": "161-boxing-club",
-    "title": "161 Boxing Club Portfolio",
+    "slug": "client-a-digitization",
+    "title": "Client A — Retail & Wholesale Digitization",
     "date": "",
-    "role": "Systems Designer",
-    "tags": ["Portfolio", "Design"],
-    "summary": "Case study for 161 Boxing Club portfolio work.",
-    "links": [
-      { "label": "Case Study PDF", "url": "../161_Boxing_Club_Portfolio.pdf" }
-    ],
+    "role": "Operations Architect & Systems Designer",
+    "tags": ["E‑commerce", "Automation", "CRM"],
+    "summary": "Built end‑to‑end operational infrastructure for a retail/wholesale business: B2C storefront, B2B portal, CRM, invoicing, inventory sync, and shipping integration. Reduced manual work ~80% and enabled 10× order capacity.",
+    "links": [],
     "cover": "",
     "assets": [],
     "body": ""
   },
   {
-    "slug": "art-portfolio-website-development",
-    "title": "Art Portfolio Website Development",
+    "slug": "client-b-coaching-platform",
+    "title": "Client B — Coaching/Community Platform Systems",
     "date": "",
-    "role": "Systems Designer",
-    "tags": ["Web", "Portfolio"],
-    "summary": "Website development for an art portfolio.",
-    "links": [
-      { "label": "Case Study PDF", "url": "../Art Portfolio Website Development.pdf" }
-    ],
+    "role": "Operations Architect & Systems Designer",
+    "tags": ["Community", "Email", "Conversion"],
+    "summary": "Re‑architected site structure and community flows, implemented conversion tracking and email automations, and delivered a clearer navigation model with supporting dashboards.",
+    "links": [],
     "cover": "",
     "assets": [],
     "body": ""
   },
   {
-    "slug": "molotow-portfolio",
-    "title": "Molotow Portfolio",
+    "slug": "client-c-fitness-automation",
+    "title": "Client C — Fitness Operations Automation",
     "date": "",
-    "role": "Systems Designer",
-    "tags": ["Portfolio"],
-    "summary": "Formatted portfolio sample for Molotow.",
-    "links": [
-      { "label": "Case Study PDF", "url": "../molotow_portfolio_formatted (1).pdf" }
-    ],
+    "role": "Operations Architect & Systems Designer",
+    "tags": ["Payments", "Scheduling", "CRM"],
+    "summary": "Replaced manual e‑transfers and Canva invoices with integrated payments, scheduling, and CRM. Standardized onboarding and reduced admin overhead.",
+    "links": [],
     "cover": "",
     "assets": [],
     "body": ""
