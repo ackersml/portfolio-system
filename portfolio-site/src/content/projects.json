@@ -1,0 +1,49 @@
+[
+  {
+    "slug": "161-boxing-club-portfolio",
+    "title": "161 Boxing Club Portfolio",
+    "description": "End-to-end portfolio system for a boxing club: content architecture, automation, and deployment.",
+    "pdf": "/pdfs/161_Boxing_Club_Portfolio.pdf",
+    "thumbnail": null,
+    "tags": ["Systems", "Automation", "Deployment"],
+    "year": 2025
+  },
+  {
+    "slug": "art-portfolio-website-development",
+    "title": "Art Portfolio Website Development",
+    "description": "Local-first, fast-loading portfolio site with structured content and smooth publishing.",
+    "pdf": "/pdfs/Art Portfolio Website Development.pdf",
+    "thumbnail": null,
+    "tags": ["Web", "Local-first", "Performance"],
+    "year": 2025
+  },
+  {
+    "slug": "molotow-portfolio",
+    "title": "Molotow Portfolio",
+    "description": "Operations architecture and presentation system emphasizing reliable offline access.",
+    "pdf": "/pdfs/molotow_portfolio_formatted (1).pdf",
+    "thumbnail": null,
+    "tags": ["Operations", "Offline", "Architecture"],
+    "year": 2025
+  },
+  {
+    "slug": "saas-business-process-architecture",
+    "title": "SaaS Business Process Architecture",
+    "description": "Process design for SaaS operations: clarity, observability, and automation handoffs.",
+    "pdf": "/pdfs/Saas Business Process Architecture.pdf",
+    "thumbnail": null,
+    "tags": ["SaaS", "Processes", "Architecture"],
+    "year": 2025
+  },
+  {
+    "slug": "saas-workflow-design",
+    "title": "SaaS Workflow Design",
+    "description": "Workflow blueprints integrating on-prem and cloud with build-to-fit automation.",
+    "pdf": "/pdfs/Saas Workflow Design.pdf",
+    "thumbnail": null,
+    "tags": ["Workflows", "Automation", "On‑prem"],
+    "year": 2025
+  }
+]
+
+

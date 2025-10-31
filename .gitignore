@@ -1,3 +1,6 @@
 .DS_Store
-portfolio-site/
+portfolio-site/node_modules/
+portfolio-site/.next/
+portfolio-site/.vercel/
+portfolio-site/out/
 
