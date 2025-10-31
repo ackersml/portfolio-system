@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "161-boxing-club",
+    "title": "161 Boxing Club Portfolio",
+    "date": "",
+    "role": "Systems Designer",
+    "tags": ["Portfolio", "Design"],
+    "summary": "Case study for 161 Boxing Club portfolio work.",
+    "links": [
+      { "label": "Case Study PDF", "url": "../161_Boxing_Club_Portfolio.pdf" }
+    ],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  },
+  {
+    "slug": "art-portfolio-website-development",
+    "title": "Art Portfolio Website Development",
+    "date": "",
+    "role": "Systems Designer",
+    "tags": ["Web", "Portfolio"],
+    "summary": "Website development for an art portfolio.",
+    "links": [
+      { "label": "Case Study PDF", "url": "../Art Portfolio Website Development.pdf" }
+    ],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  },
+  {
+    "slug": "molotow-portfolio",
+    "title": "Molotow Portfolio",
+    "date": "",
+    "role": "Systems Designer",
+    "tags": ["Portfolio"],
+    "summary": "Formatted portfolio sample for Molotow.",
+    "links": [
+      { "label": "Case Study PDF", "url": "../molotow_portfolio_formatted (1).pdf" }
+    ],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  },
+  {
+    "slug": "saas-business-process-architecture",
+    "title": "SaaS Business Process Architecture",
+    "date": "",
+    "role": "Systems Designer",
+    "tags": ["SaaS", "Architecture"],
+    "summary": "Business process architecture for SaaS operations.",
+    "links": [
+      { "label": "Case Study PDF", "url": "../Saas Business Process Architecture.pdf" }
+    ],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  },
+  {
+    "slug": "saas-workflow-design",
+    "title": "SaaS Workflow Design",
+    "date": "",
+    "role": "Systems Designer",
+    "tags": ["SaaS", "Workflow"],
+    "summary": "Workflow design for SaaS systems.",
+    "links": [
+      { "label": "Case Study PDF", "url": "../Saas Workflow Design.pdf" }
+    ],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  }
+]

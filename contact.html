@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Start a Project</title>
+  <meta name="description" content="Get in touch to discuss systems development or local-first software.">
+  <meta property="og:title" content="Contact — Start a Project">
+  <meta property="og:description" content="Get in touch to discuss systems development or local-first software.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Start a Project">
+  <meta name="twitter:description" content="Get in touch to discuss systems development or local-first software.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Michelle Ackers</a>
+      <nav class="nav">
+        <a href="projects.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="list-page">
+    <div class="container">
+      <div class="article">
+        <h1>Start a project</h1>
+        <p>Email me directly at <a href="mailto:ackers.ml@gmail.com">ackers.ml@gmail.com</a>.</p>
+        <p class="notice">Include a short description of your context, goals, timeline, and whether you prefer build‑to‑fit or a local software package.</p>
+        <h2>Quick message</h2>
+        <form onsubmit="window.location.href = 'mailto:ackers.ml@gmail.com?subject=' + encodeURIComponent(document.getElementById('subject').value) + '&body=' + encodeURIComponent(document.getElementById('message').value); return false;">
+          <div style="display:grid; grid-template-columns:1fr; gap:12px;">
+            <input id="subject" required placeholder="Subject" style="padding:10px; border-radius:8px; border:1px solid var(--border); background:var(--panel); color:var(--text);">
+            <textarea id="message" required rows="6" placeholder="Message" style="padding:10px; border-radius:8px; border:1px solid var(--border); background:var(--panel); color:var(--text);"></textarea>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Michelle Ackers.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
