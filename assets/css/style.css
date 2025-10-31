@@ -60,4 +60,13 @@ body {
 .article h1 { margin-top: 0; }
 .badge { display:inline-block; font-size:12px; padding: 2px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); margin-right: 6px; }
 .pdf-embed { width: 100%; min-height: 70vh; border: none; background: #fff; border-radius: 8px; }
+
+/* Resume images */
+.resume-images { display: grid; gap: 16px; }
+.resume-images img { width: 100%; height: auto; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+
+/* Details sections for simple vs technical content */
+details.audience { border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 12px 16px; background: #fafafa; }
+details.audience + details.audience { margin-top: 12px; }
+details.audience summary { font-weight: 600; cursor: pointer; }
 .notice { color: var(--muted); font-size: 14px; }
