@@ -6,7 +6,9 @@
     "role": "Operations Architect & Systems Designer",
     "tags": ["E‑commerce", "Automation", "CRM"],
     "summary": "Built end‑to‑end operational infrastructure for a retail/wholesale business: B2C storefront, B2B portal, CRM, invoicing, inventory sync, and shipping integration. Reduced manual work ~80% and enabled 10× order capacity.",
-    "links": [],
+    "links": [
+      { "label": "Case Study PDF", "url": "../Saas Business Process Architecture.pdf" }
+    ],
     "cover": "",
     "assets": [],
     "body": ""
@@ -18,7 +20,9 @@
     "role": "Operations Architect & Systems Designer",
     "tags": ["Community", "Email", "Conversion"],
     "summary": "Re‑architected site structure and community flows, implemented conversion tracking and email automations, and delivered a clearer navigation model with supporting dashboards.",
-    "links": [],
+    "links": [
+      { "label": "Case Study PDF", "url": "../Saas Workflow Design.pdf" }
+    ],
     "cover": "",
     "assets": [],
     "body": ""
@@ -30,7 +34,9 @@
     "role": "Operations Architect & Systems Designer",
     "tags": ["Payments", "Scheduling", "CRM"],
     "summary": "Replaced manual e‑transfers and Canva invoices with integrated payments, scheduling, and CRM. Standardized onboarding and reduced admin overhead.",
-    "links": [],
+    "links": [
+      { "label": "Case Study PDF", "url": "../Art Portfolio Website Development.pdf" }
+    ],
     "cover": "",
     "assets": [],
     "body": ""
