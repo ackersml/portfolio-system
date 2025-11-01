@@ -7,7 +7,7 @@
     "tags": ["E‑commerce", "Automation", "CRM"],
     "summary": "Built end‑to‑end operational infrastructure for a retail/wholesale business: B2C storefront, B2B portal, CRM, invoicing, inventory sync, and shipping integration. Reduced manual work ~80% and enabled 10× order capacity.",
     "links": [
-      { "label": "Case Study PDF", "url": "project-a.pdf" }
+      { "label": "Case Study PDF", "url": "project-b.pdf" }
     ],
     "cover": "",
     "assets": [],
@@ -20,9 +20,7 @@
     "role": "Operations Architect & Systems Designer",
     "tags": ["Community", "Email", "Conversion"],
     "summary": "Re‑architected site structure and community flows; built admin analytics for revenue, engagement, and content; delivered Softr frontend (dashboard, directory, courses, replays, newsletter, profile, admin) backed by Airtable (Users, Subscriptions, Courses, Replays, Engagement, Newsletter).",
-    "links": [
-      { "label": "Case Study PDF", "url": "project-b.pdf" }
-    ],
+    "links": [],
     "cover": "",
     "assets": [],
     "body": ""
@@ -34,7 +32,9 @@
     "role": "Systems Designer & Developer",
     "tags": ["macOS", "Local AI", "Automation"],
     "summary": "A local, privacy‑first macOS menu bar assistant for quick actions: launch apps, file search, summaries, email drafts, and scripted workflows. Uses on‑device models when possible with pluggable tools for calendar, notes, and shell commands.",
-    "links": [],
+    "links": [
+      { "label": "Case Study PDF", "url": "project-c.pdf" }
+    ],
     "cover": "",
     "assets": [],
     "body": ""
@@ -59,7 +59,7 @@
     "tags": ["Payments", "Scheduling", "CRM"],
     "summary": "Replaced manual e‑transfers and Canva invoices with integrated payments, scheduling, and CRM. Standardized onboarding and reduced admin overhead.",
     "links": [
-      { "label": "Case Study PDF", "url": "project-c.pdf" }
+      { "label": "Case Study PDF", "url": "project-a.pdf" }
     ],
     "cover": "",
     "assets": [],
