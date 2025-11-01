@@ -23,7 +23,19 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>Centralized analytics for revenue, engagement, content</li><li>Cleaner site IA and community flows</li><li>Email automations tied to events</li></ul>",
-    "diagram": "graph TD\n  subgraph Frontend (Modules)\n    DASH[Dashboard] -- views --> DATA\n    DIR[Directory] -- views --> DATA\n    COURSES[Courses] -- views --> DATA\n    REPLAYS[Replays] -- views --> DATA\n    NEWS[Newsletter] -- views --> DATA\n    PROFILE[Profile] -- updates --> DATA\n    ADMIN[Admin] -- manages --> DATA\n  end\n  subgraph Backend (Airtable)\n    DATA[(Users, Subs, Courses, Replays, Engagement, Newsletter)]\n  end\n  DATA --> EMAIL[Email Automations]\n  DATA --> ANALYTICS[Analytics]"
+    "diagram": "graph TD\n  subgraph Frontend\n    DASH[Dashboard] --> DATA
+    DIR[Directory] --> DATA
+    COURSES[Courses] --> DATA
+    REPLAYS[Replays] --> DATA
+    NEWS[Newsletter] --> DATA
+    PROFILE[Profile] --> DATA
+    ADMIN[Admin] --> DATA
+  end
+  subgraph Backend
+    DATA[(Airtable Tables)]
+  end
+  DATA --> EMAIL[Email Automations]
+  DATA --> ANALYTICS[Analytics]"
   },
   {
     "slug": "mac-assistant",
