@@ -10,7 +10,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>~80% reduction in manual admin</li><li>10× order capacity readiness</li><li>Unified reporting across B2C/B2B</li></ul>",
-    "diagram": "graph TD\n  B2C[Shopfront (B2C)] --> CRM[CRM]\n  B2B[B2B Portal] --> CRM\n  CRM --> INV[Inventory]\n  CRM --> ACC[Accounting]\n  CRM --> SHIP[Shipping]\n  ACC --> REPORTS[Reports]\n  subgraph Platforms\n  B2C; B2B; CRM; INV; ACC; SHIP\n  end"
+    "diagram": "graph TD\n  B2C[Shopfront (B2C)] --> CRM[CRM]\n  B2B[B2B Portal] --> CRM\n  CRM --> INV[Inventory]\n  CRM --> ACC[Accounting]\n  CRM --> SHIP[Shipping]\n  ACC --> REPORTS[Reports]\n  subgraph Platforms\n    B2C\n    B2B\n    CRM\n    INV\n    ACC\n    SHIP\n  end"
   },
   {
     "slug": "client-b-coaching-platform",
@@ -23,7 +23,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>Centralized analytics for revenue, engagement, content</li><li>Cleaner site IA and community flows</li><li>Email automations tied to events</li></ul>",
-    "diagram": "graph TD\n  subgraph Frontend (Modules)\n  DASH[Dashboard] -- views --> DATA\n  DIR[Directory] -- views --> DATA\n  COURSES -- views --> DATA\n  REPLAYS -- views --> DATA\n  NEWS[Newsletter] -- views --> DATA\n  PROFILE -- updates --> DATA\n  ADMIN -- manages --> DATA\n  end\n  subgraph Backend (Airtable)\n  DATA[(Users, Subs, Courses, Replays, Engagement, Newsletter)]\n  end\n  DATA --> EMAIL[Email Automations]\n  DATA --> ANALYTICS[Analytics]"
+    "diagram": "graph TD\n  subgraph Frontend (Modules)\n    DASH[Dashboard] -- views --> DATA\n    DIR[Directory] -- views --> DATA\n    COURSES[Courses] -- views --> DATA\n    REPLAYS[Replays] -- views --> DATA\n    NEWS[Newsletter] -- views --> DATA\n    PROFILE[Profile] -- updates --> DATA\n    ADMIN[Admin] -- manages --> DATA\n  end\n  subgraph Backend (Airtable)\n    DATA[(Users, Subs, Courses, Replays, Engagement, Newsletter)]\n  end\n  DATA --> EMAIL[Email Automations]\n  DATA --> ANALYTICS[Analytics]"
   },
   {
     "slug": "mac-assistant",
@@ -36,7 +36,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Capabilities</h3><ul><li>Launch apps, file search, quick summaries</li><li>Email drafts and notes</li><li>Scripted workflows with tools</li></ul>",
-    "diagram": "graph TD\n  MB[macOS Menu Bar] --> ROUTER[Intent Router]\n  ROUTER --> LLM[Local Model]\n  ROUTER --> TOOLS[Tools]\n  TOOLS --> APPS[Apps]\n  TOOLS --> FILES[Files]\n  TOOLS --> MAIL[Email]\n  LLM -.on-device.- MB"
+    "diagram": "graph TD\n  MB[macOS Menu Bar] --> ROUTER[Intent Router]\n  ROUTER --> LLM[Local Model]\n  ROUTER --> TOOLS[Tools]\n  TOOLS --> APPS[Apps]\n  TOOLS --> FILES[Files]\n  TOOLS --> MAIL[Email]\n  LLM -. on-device .-> MB"
   },
   {
     "slug": "artist-archive-commerce",
@@ -49,7 +49,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>Searchable archive with metadata</li><li>Simple contact/booking funnel</li><li>Optional direct sales</li></ul>",
-    "diagram": "graph TD\n  SITE[Portfolio Site] --> GALLERY[Gallery]\n  GALLERY --> META[Metadata]\n  SITE --> CONTACT[Contact & Booking]\n  SITE -.optional.-.-> SHOP[E‑commerce]"
+    "diagram": "graph TD\n  SITE[Portfolio Site] --> GALLERY[Gallery]\n  GALLERY --> META[Metadata]\n  SITE --> CONTACT[Contact & Booking]\n  SITE -. optional .-> SHOP[E‑commerce]"
   },
   {
     "slug": "client-c-fitness-automation",
