@@ -1,0 +1,8 @@
+graph TD
+  USERS --> UI[App UI]
+  UI --> API[Typed API]
+  API --> SVC[Services]
+  SVC --> DB[(Data Stores)]
+  SVC --> EVENTS[(Events)]
+  EVENTS --> ANALYTICS[Analytics]
+

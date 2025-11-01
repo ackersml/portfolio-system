@@ -1,0 +1,16 @@
+graph TD
+  subgraph Frontend
+    DASH[Dashboard] --> DATA
+    DIR[Directory] --> DATA
+    COURSES[Courses] --> DATA
+    REPLAYS[Replays] --> DATA
+    NEWS[Newsletter] --> DATA
+    PROFILE[Profile] --> DATA
+    ADMIN[Admin] --> DATA
+  end
+  subgraph Backend
+    DATA[(Airtable Tables)]
+  end
+  DATA --> EMAIL[Email Automations]
+  DATA --> ANALYTICS[Analytics]
+

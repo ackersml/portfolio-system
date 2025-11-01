@@ -1,0 +1,9 @@
+graph TD
+  MB[macOS Menu Bar] --> ROUTER[Intent Router]
+  ROUTER --> LLM[Local Model]
+  ROUTER --> TOOLS[Tools]
+  TOOLS --> APPS[Apps]
+  TOOLS --> FILES[Files]
+  TOOLS --> MAIL[Email]
+  LLM -. on-device .-> MB
+

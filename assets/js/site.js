@@ -97,16 +97,26 @@ async function renderProjectPage() {
     article.appendChild(body);
   }
 
-  // Mermaid architecture diagram
-  if (project.diagram) {
+  // Mermaid architecture diagram (inline string or external .mmd file)
+  const renderMermaid = (text) => {
     const pre = document.createElement('pre');
     pre.className = 'mermaid';
-    pre.textContent = project.diagram;
+    pre.textContent = text;
     article.appendChild(pre);
-    // Initialize mermaid after insertion
     if (window.mermaid && window.mermaid.init) {
-      try { window.mermaid.init(undefined, pre); } catch (e) { /* ignore */ }
+      try { window.mermaid.init(undefined, pre); } catch (_) {}
     }
+  };
+  if (project.diagram) {
+    renderMermaid(project.diagram);
+  } else if (project.diagramPath) {
+    try {
+      const resp = await fetch(project.diagramPath, { cache: 'no-store' });
+      if (resp.ok) {
+        const txt = await resp.text();
+        renderMermaid(txt);
+      }
+    } catch (_) {}
   }
 
   container.appendChild(article);

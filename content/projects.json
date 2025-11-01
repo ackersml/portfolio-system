@@ -10,7 +10,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>~80% reduction in manual admin</li><li>10× order capacity readiness</li><li>Unified reporting across B2C/B2B</li></ul>",
-    "diagram": "graph TD\n  B2C[Shopfront (B2C)] --> CRM[CRM]\n  B2B[B2B Portal] --> CRM\n  CRM --> INV[Inventory]\n  CRM --> ACC[Accounting]\n  CRM --> SHIP[Shipping]\n  ACC --> REPORTS[Reports]\n  subgraph Platforms\n    B2C\n    B2B\n    CRM\n    INV\n    ACC\n    SHIP\n  end"
+    "diagramPath": "diagrams/retail-wholesale.mmd"
   },
   {
     "slug": "client-b-coaching-platform",
@@ -23,19 +23,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>Centralized analytics for revenue, engagement, content</li><li>Cleaner site IA and community flows</li><li>Email automations tied to events</li></ul>",
-    "diagram": "graph TD\n  subgraph Frontend\n    DASH[Dashboard] --> DATA
-    DIR[Directory] --> DATA
-    COURSES[Courses] --> DATA
-    REPLAYS[Replays] --> DATA
-    NEWS[Newsletter] --> DATA
-    PROFILE[Profile] --> DATA
-    ADMIN[Admin] --> DATA
-  end
-  subgraph Backend
-    DATA[(Airtable Tables)]
-  end
-  DATA --> EMAIL[Email Automations]
-  DATA --> ANALYTICS[Analytics]"
+    "diagramPath": "diagrams/coaching-platform.mmd"
   },
   {
     "slug": "mac-assistant",
@@ -48,7 +36,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Capabilities</h3><ul><li>Launch apps, file search, quick summaries</li><li>Email drafts and notes</li><li>Scripted workflows with tools</li></ul>",
-    "diagram": "graph TD\n  MB[macOS Menu Bar] --> ROUTER[Intent Router]\n  ROUTER --> LLM[Local Model]\n  ROUTER --> TOOLS[Tools]\n  TOOLS --> APPS[Apps]\n  TOOLS --> FILES[Files]\n  TOOLS --> MAIL[Email]\n  LLM -. on-device .-> MB"
+    "diagramPath": "diagrams/mac-assistant.mmd"
   },
   {
     "slug": "artist-archive-commerce",
@@ -61,7 +49,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>Searchable archive with metadata</li><li>Simple contact/booking funnel</li><li>Optional direct sales</li></ul>",
-    "diagram": "graph TD\n  SITE[Portfolio Site] --> GALLERY[Gallery]\n  GALLERY --> META[Metadata]\n  SITE --> CONTACT[Contact & Booking]\n  SITE -. optional .-> SHOP[E‑commerce]"
+    "diagramPath": "diagrams/artist-archive.mmd"
   },
   {
     "slug": "client-c-fitness-automation",
@@ -74,7 +62,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Outcomes</h3><ul><li>Integrated payments and scheduling</li><li>Standardized onboarding</li><li>Reduced admin overhead</li></ul>",
-    "diagram": "graph TD\n  SITE[Website] --> FORM[Intake Form]\n  FORM --> CRM[CRM]\n  CRM --> SCHED[Scheduling]\n  CRM --> PAY[Payments]\n  PAY --> RECEIPTS[Receipts]\n  CRM --> EMAIL[Notifications]"
+    "diagramPath": "diagrams/fitness-automation.mmd"
   },
   {
     "slug": "saas-business-process-architecture",
@@ -87,7 +75,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Scope</h3><ul><li>End‑to‑end process mapping</li><li>System boundaries & contracts</li><li>Event flows and data models</li></ul>",
-    "diagram": "graph TD\n  USERS --> UI[App UI]\n  UI --> API[Typed API]\n  API --> SVC[Services]\n  SVC --> DB[(Data Stores)]\n  SVC --> EVENTS[(Events)]\n  EVENTS --> ANALYTICS[Analytics]"
+    "diagramPath": "diagrams/saas-architecture.mmd"
   },
   {
     "slug": "saas-workflow-design",
@@ -100,6 +88,7 @@
     "cover": "",
     "assets": [],
     "body": "<h3>Scope</h3><ul><li>Workflow diagrams</li><li>Background jobs and schedulers</li><li>Observability and runbooks</li></ul>",
-    "diagram": "graph TD\n  TRIG[Triggers] --> JOBS[Jobs]\n  JOBS --> QUEUE[Queue]\n  QUEUE --> WORKERS[Workers]\n  WORKERS --> DB[(DB)]\n  WORKERS --> METRICS[Metrics]"
+    "diagramPath": "diagrams/saas-workflow.mmd"
   }
 ]
+

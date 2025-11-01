@@ -1,0 +1,7 @@
+graph TD
+  TRIG[Triggers] --> JOBS[Jobs]
+  JOBS --> QUEUE[Queue]
+  QUEUE --> WORKERS[Workers]
+  WORKERS --> DB[(DB)]
+  WORKERS --> METRICS[Metrics]
+
