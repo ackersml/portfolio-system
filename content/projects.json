@@ -19,10 +19,34 @@
     "date": "",
     "role": "Operations Architect & Systems Designer",
     "tags": ["Community", "Email", "Conversion"],
-    "summary": "Re‑architected site structure and community flows, implemented conversion tracking and email automations, and delivered a clearer navigation model with supporting dashboards.",
+    "summary": "Re‑architected site structure and community flows; built admin analytics for revenue, engagement, and content; delivered Softr frontend (dashboard, directory, courses, replays, newsletter, profile, admin) backed by Airtable (Users, Subscriptions, Courses, Replays, Engagement, Newsletter).",
     "links": [
       { "label": "Case Study PDF", "url": "project-b.pdf" }
     ],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  },
+  {
+    "slug": "mac-assistant",
+    "title": "Mac Assistant — Local AI Automation",
+    "date": "",
+    "role": "Systems Designer & Developer",
+    "tags": ["macOS", "Local AI", "Automation"],
+    "summary": "A local, privacy‑first macOS menu bar assistant for quick actions: launch apps, file search, summaries, email drafts, and scripted workflows. Uses on‑device models when possible with pluggable tools for calendar, notes, and shell commands.",
+    "links": [],
+    "cover": "",
+    "assets": [],
+    "body": ""
+  },
+  {
+    "slug": "artist-archive-commerce",
+    "title": "Client D — Artist Portfolio & Archive System",
+    "date": "",
+    "role": "Systems Designer",
+    "tags": ["Portfolio", "Archive", "E‑commerce"],
+    "summary": "Custom responsive portfolio with gallery system, image metadata, categorization, contact/booking forms with backend storage and notifications, and optional e‑commerce for direct sales.",
+    "links": [],
     "cover": "",
     "assets": [],
     "body": ""
