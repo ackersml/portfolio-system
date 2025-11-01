@@ -6,12 +6,11 @@
     "role": "Operations Architect & Systems Designer",
     "tags": ["E‑commerce", "Automation", "CRM"],
     "summary": "Built end‑to‑end operational infrastructure for a retail/wholesale business: B2C storefront, B2B portal, CRM, invoicing, inventory sync, and shipping integration. Reduced manual work ~80% and enabled 10× order capacity.",
-    "links": [
-      { "label": "Case Study PDF", "url": "project-b.pdf" }
-    ],
+    "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Outcomes</h3><ul><li>~80% reduction in manual admin</li><li>10× order capacity readiness</li><li>Unified reporting across B2C/B2B</li></ul>",
+    "diagram": "graph TD\n  B2C[Shopfront (B2C)] --> CRM[CRM]\n  B2B[B2B Portal] --> CRM\n  CRM --> INV[Inventory]\n  CRM --> ACC[Accounting]\n  CRM --> SHIP[Shipping]\n  ACC --> REPORTS[Reports]\n  subgraph Platforms\n  B2C; B2B; CRM; INV; ACC; SHIP\n  end"
   },
   {
     "slug": "client-b-coaching-platform",
@@ -23,7 +22,8 @@
     "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Outcomes</h3><ul><li>Centralized analytics for revenue, engagement, content</li><li>Cleaner site IA and community flows</li><li>Email automations tied to events</li></ul>",
+    "diagram": "graph TD\n  subgraph Frontend (Modules)\n  DASH[Dashboard] -- views --> DATA\n  DIR[Directory] -- views --> DATA\n  COURSES -- views --> DATA\n  REPLAYS -- views --> DATA\n  NEWS[Newsletter] -- views --> DATA\n  PROFILE -- updates --> DATA\n  ADMIN -- manages --> DATA\n  end\n  subgraph Backend (Airtable)\n  DATA[(Users, Subs, Courses, Replays, Engagement, Newsletter)]\n  end\n  DATA --> EMAIL[Email Automations]\n  DATA --> ANALYTICS[Analytics]"
   },
   {
     "slug": "mac-assistant",
@@ -32,12 +32,11 @@
     "role": "Systems Designer & Developer",
     "tags": ["macOS", "Local AI", "Automation"],
     "summary": "A local, privacy‑first macOS menu bar assistant for quick actions: launch apps, file search, summaries, email drafts, and scripted workflows. Uses on‑device models when possible with pluggable tools for calendar, notes, and shell commands.",
-    "links": [
-      { "label": "Case Study PDF", "url": "project-c.pdf" }
-    ],
+    "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Capabilities</h3><ul><li>Launch apps, file search, quick summaries</li><li>Email drafts and notes</li><li>Scripted workflows with tools</li></ul>",
+    "diagram": "graph TD\n  MB[macOS Menu Bar] --> ROUTER[Intent Router]\n  ROUTER --> LLM[Local Model]\n  ROUTER --> TOOLS[Tools]\n  TOOLS --> APPS[Apps]\n  TOOLS --> FILES[Files]\n  TOOLS --> MAIL[Email]\n  LLM -.on-device.- MB"
   },
   {
     "slug": "artist-archive-commerce",
@@ -49,7 +48,8 @@
     "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Outcomes</h3><ul><li>Searchable archive with metadata</li><li>Simple contact/booking funnel</li><li>Optional direct sales</li></ul>",
+    "diagram": "graph TD\n  SITE[Portfolio Site] --> GALLERY[Gallery]\n  GALLERY --> META[Metadata]\n  SITE --> CONTACT[Contact & Booking]\n  SITE -.optional.-.-> SHOP[E‑commerce]"
   },
   {
     "slug": "client-c-fitness-automation",
@@ -58,12 +58,11 @@
     "role": "Operations Architect & Systems Designer",
     "tags": ["Payments", "Scheduling", "CRM"],
     "summary": "Replaced manual e‑transfers and Canva invoices with integrated payments, scheduling, and CRM. Standardized onboarding and reduced admin overhead.",
-    "links": [
-      { "label": "Case Study PDF", "url": "project-a.pdf" }
-    ],
+    "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Outcomes</h3><ul><li>Integrated payments and scheduling</li><li>Standardized onboarding</li><li>Reduced admin overhead</li></ul>",
+    "diagram": "graph TD\n  SITE[Website] --> FORM[Intake Form]\n  FORM --> CRM[CRM]\n  CRM --> SCHED[Scheduling]\n  CRM --> PAY[Payments]\n  PAY --> RECEIPTS[Receipts]\n  CRM --> EMAIL[Notifications]"
   },
   {
     "slug": "saas-business-process-architecture",
@@ -72,12 +71,11 @@
     "role": "Systems Designer",
     "tags": ["SaaS", "Architecture"],
     "summary": "Business process architecture for SaaS operations.",
-    "links": [
-      { "label": "Case Study PDF", "url": "../Saas Business Process Architecture.pdf" }
-    ],
+    "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Scope</h3><ul><li>End‑to‑end process mapping</li><li>System boundaries & contracts</li><li>Event flows and data models</li></ul>",
+    "diagram": "graph TD\n  USERS --> UI[App UI]\n  UI --> API[Typed API]\n  API --> SVC[Services]\n  SVC --> DB[(Data Stores)]\n  SVC --> EVENTS[(Events)]\n  EVENTS --> ANALYTICS[Analytics]"
   },
   {
     "slug": "saas-workflow-design",
@@ -86,11 +84,10 @@
     "role": "Systems Designer",
     "tags": ["SaaS", "Workflow"],
     "summary": "Workflow design for SaaS systems.",
-    "links": [
-      { "label": "Case Study PDF", "url": "../Saas Workflow Design.pdf" }
-    ],
+    "links": [],
     "cover": "",
     "assets": [],
-    "body": ""
+    "body": "<h3>Scope</h3><ul><li>Workflow diagrams</li><li>Background jobs and schedulers</li><li>Observability and runbooks</li></ul>",
+    "diagram": "graph TD\n  TRIG[Triggers] --> JOBS[Jobs]\n  JOBS --> QUEUE[Queue]\n  QUEUE --> WORKERS[Workers]\n  WORKERS --> DB[(DB)]\n  WORKERS --> METRICS[Metrics]"
   }
 ]

@@ -90,17 +90,23 @@ async function renderProjectPage() {
   });
   article.appendChild(tags);
 
-  const pdfLink = (project.links || []).find(l => /pdf/i.test(l.label) || /\.pdf$/i.test(l.url));
-  if (pdfLink) {
-    const frame = document.createElement('iframe');
-    frame.className = 'pdf-embed';
-    frame.src = pdfLink.url;
-    frame.title = `${project.title} — PDF`;
-    article.appendChild(frame);
-    const fallback = document.createElement('p');
-    fallback.className = 'notice';
-    fallback.innerHTML = `If the PDF does not load, <a href="${pdfLink.url}">open it directly</a>.`;
-    article.appendChild(fallback);
+  // Rich body content (HTML string)
+  if (project.body) {
+    const body = document.createElement('div');
+    body.innerHTML = project.body;
+    article.appendChild(body);
+  }
+
+  // Mermaid architecture diagram
+  if (project.diagram) {
+    const pre = document.createElement('pre');
+    pre.className = 'mermaid';
+    pre.textContent = project.diagram;
+    article.appendChild(pre);
+    // Initialize mermaid after insertion
+    if (window.mermaid && window.mermaid.init) {
+      try { window.mermaid.init(undefined, pre); } catch (e) { /* ignore */ }
+    }
   }
 
   container.appendChild(article);
