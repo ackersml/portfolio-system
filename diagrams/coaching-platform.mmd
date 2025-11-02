@@ -9,7 +9,7 @@ graph TD
     ADMIN[Admin]
   end
   subgraph Backend
-    DATA[(Airtable Tables)]
+    DATA[(Data Store)]
     BUS[(Events/Jobs)]
   end
   DASH --> DATA
@@ -19,7 +19,7 @@ graph TD
   NEWS --> DATA
   PROFILE --> DATA
   ADMIN --> DATA
-  DATA --> EMAIL[Email Automations]
+  DATA --> EMAIL[Notifications/Automations]
   DATA --> ANALYTICS[Analytics]
   DATA -. triggers .-> BUS
   BUS --> EMAIL

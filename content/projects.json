@@ -18,11 +18,11 @@
     "date": "",
     "role": "Operations Architect & Systems Designer",
     "tags": ["Community", "Email", "Conversion"],
-    "summary": "Re‑architected site structure and community flows; built admin analytics for revenue, engagement, and content; delivered Softr frontend (dashboard, directory, courses, replays, newsletter, profile, admin) backed by Airtable (Users, Subscriptions, Courses, Replays, Engagement, Newsletter).",
+    "summary": "Custom system build: simplified information architecture, unified membership and content modules, and admin analytics for revenue, engagement, and publishing — with a privacy‑respecting data store and portable schema.",
     "links": [],
     "cover": "",
     "assets": [],
-    "body": "<h3>Outcomes</h3><ul><li>Centralized analytics for revenue, engagement, content</li><li>Cleaner site IA and community flows</li><li>Email automations tied to events</li></ul>",
+    "body": "<h3>Scope</h3><ul><li>Re‑structured navigation and content model (directory, courses, replays, updates, profiles)</li><li>Unified membership layer and permissions</li><li>Admin analytics for revenue, engagement, and content cadence</li><li>Event‑driven messaging and lifecycle automations</li></ul>",
     "diagramPath": "diagrams/coaching-platform.mmd"
   },
   {
