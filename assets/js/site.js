@@ -1,6 +1,12 @@
 async function fetchProjects() {
-  const res = await fetch('content/projects.json', { cache: 'no-store' });
-  return res.json();
+  try {
+    const res = await fetch('content/projects.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Failed to load projects.json');
+    return await res.json();
+  } catch (err) {
+    console.error('Projects load error:', err);
+    return [];
+  }
 }
 
 function setYear() {
@@ -38,6 +44,13 @@ async function renderProjectsPage() {
   const grid = document.querySelector('#projects-grid');
   if (!grid) return;
   const projects = await fetchProjects();
+  if (!Array.isArray(projects) || projects.length === 0) {
+    const msg = document.createElement('p');
+    msg.className = 'notice';
+    msg.textContent = 'No projects found. Please refresh the page.';
+    grid.parentElement.appendChild(msg);
+    return;
+  }
   projects.forEach(p => grid.appendChild(createProjectCard(p)));
 }
 
