@@ -1,16 +1,26 @@
 graph TD
   subgraph Frontend
-    DASH[Dashboard] --> DATA
-    DIR[Directory] --> DATA
-    COURSES[Courses] --> DATA
-    REPLAYS[Replays] --> DATA
-    NEWS[Newsletter] --> DATA
-    PROFILE[Profile] --> DATA
-    ADMIN[Admin] --> DATA
+    DASH[Dashboard]
+    DIR[Directory]
+    COURSES[Courses]
+    REPLAYS[Replays]
+    NEWS[Newsletter]
+    PROFILE[Profile]
+    ADMIN[Admin]
   end
   subgraph Backend
     DATA[(Airtable Tables)]
+    BUS[(Events/Jobs)]
   end
+  DASH --> DATA
+  DIR --> DATA
+  COURSES --> DATA
+  REPLAYS --> DATA
+  NEWS --> DATA
+  PROFILE --> DATA
+  ADMIN --> DATA
   DATA --> EMAIL[Email Automations]
   DATA --> ANALYTICS[Analytics]
+  DATA -. triggers .-> BUS
+  BUS --> EMAIL
 

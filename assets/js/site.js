@@ -103,8 +103,14 @@ async function renderProjectPage() {
     pre.className = 'mermaid';
     pre.textContent = text;
     article.appendChild(pre);
-    if (window.mermaid && window.mermaid.init) {
-      try { window.mermaid.init(undefined, pre); } catch (_) {}
+    if (window.mermaid) {
+      try {
+        if (window.mermaid.run) {
+          window.mermaid.run({ nodes: [pre] });
+        } else if (window.mermaid.init) {
+          window.mermaid.init(undefined, pre);
+        }
+      } catch (_) {}
     }
   };
   if (project.diagram) {
