@@ -1,4 +1,5 @@
 import projectsData from "@/content/projects.json";
+import { headers } from "next/headers";
 
 export type Project = {
   slug: string;
@@ -15,8 +16,11 @@ export type Project = {
 const staticProjects: Project[] = projectsData as Project[];
 
 export async function getProjects(): Promise<Project[]> {
-  const base = process.env.NEXT_PUBLIC_SITE_URL;
   try {
+    const h = headers();
+    const host = h.get("x-forwarded-host") || h.get("host");
+    const proto = h.get("x-forwarded-proto") || "https";
+    const base = process.env.NEXT_PUBLIC_SITE_URL || (host ? `${proto}://${host}` : undefined);
     if (base) {
       const res = await fetch(`${base}/projects.json`, { cache: "no-store" });
       if (res.ok) return (await res.json()) as Project[];
