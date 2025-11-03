@@ -10,17 +10,14 @@ export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 export const revalidate = 0;
 
-export function generateMetadata({ params }: { params: Params }): Metadata {
-  const project = getProjectBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const project = await getProjectBySlug(params.slug);
   if (!project) return { title: "Project not found" };
-  return {
-    title: project.title,
-    description: project.description,
-  };
+  return { title: project.title, description: project.description };
 }
 
-export default function ProjectDetail({ params }: { params: Params }) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectDetail({ params }: { params: Params }) {
+  const project = await getProjectBySlug(params.slug);
   if (!project)
     return (
       <article className="space-y-6">

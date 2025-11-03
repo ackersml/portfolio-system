@@ -12,18 +12,22 @@ export type Project = {
   diagramPath?: string; // optional path under public/ for a Mermaid .mmd file
 };
 
-export const projects: Project[] = projectsData as Project[];
+const staticProjects: Project[] = projectsData as Project[];
 
-export function getProjects(): Project[] {
-  return projects;
+export async function getProjects(): Promise<Project[]> {
+  const base = process.env.NEXT_PUBLIC_SITE_URL;
+  try {
+    if (base) {
+      const res = await fetch(`${base}/projects.json`, { cache: "no-store" });
+      if (res.ok) return (await res.json()) as Project[];
+    }
+  } catch {}
+  return staticProjects;
 }
 
-export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug);
-}
-
-export function getProjectSlugs(): string[] {
-  return projects.map((p) => p.slug);
+export async function getProjectBySlug(slug: string): Promise<Project | undefined> {
+  const list = await getProjects();
+  return list.find((p) => p.slug === slug);
 }
 
 

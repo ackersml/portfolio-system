@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "client-a-digitization",
+    "title": "Client A — Retail & Wholesale Digitization",
+    "description": "End‑to‑end operational infrastructure: B2C, B2B, CRM, invoicing, inventory sync, shipping, and reporting.",
+    "tags": ["E‑commerce", "Automation", "CRM"],
+    "year": 2025,
+    "body": "<h3>Outcomes</h3><ul><li>~80% less manual admin</li><li>10× order capacity ready</li><li>Unified reporting across B2C/B2B</li></ul>",
+    "diagramPath": "/diagrams/retail-wholesale.mmd"
+  },
+  {
+    "slug": "client-b-coaching-platform",
+    "title": "Client B — Coaching/Community Platform Systems",
+    "description": "Custom build: simplified IA, unified membership/content, admin analytics, event‑driven automations.",
+    "tags": ["Community", "Email", "Analytics"],
+    "year": 2025,
+    "body": "<h3>Scope</h3><ul><li>Navigation and content model</li><li>Membership layer and permissions</li><li>Revenue/engagement analytics</li></ul>",
+    "diagramPath": "/diagrams/coaching-platform.mmd"
+  },
+  {
+    "slug": "mac-assistant",
+    "title": "Mac Assistant — Local AI Automation",
+    "description": "Privacy‑first macOS menu bar assistant for quick actions and scripted workflows.",
+    "tags": ["macOS", "Local AI", "Automation"],
+    "year": 2025,
+    "body": "<h3>Capabilities</h3><ul><li>Launch apps, file search, summaries</li><li>Notes and email drafts</li><li>Pluggable tools</li></ul>",
+    "diagramPath": "/diagrams/mac-assistant.mmd"
+  },
+  {
+    "slug": "artist-archive-commerce",
+    "title": "Client D — Artist Portfolio & Archive System",
+    "description": "Responsive portfolio with gallery/metadata, contact/booking, and optional direct sales.",
+    "tags": ["Portfolio", "Archive", "E‑commerce"],
+    "year": 2025,
+    "body": "<h3>Outcomes</h3><ul><li>Searchable archive</li><li>Simple booking funnel</li><li>Optional sales</li></ul>",
+    "diagramPath": "/diagrams/artist-archive.mmd"
+  },
+  {
+    "slug": "client-c-fitness-automation",
+    "title": "Client C — Fitness Operations Automation",
+    "description": "Integrated payments, scheduling, and CRM with standardized onboarding.",
+    "tags": ["Payments", "Scheduling", "CRM"],
+    "year": 2025,
+    "body": "<h3>Outcomes</h3><ul><li>Reduced admin</li><li>Standardized onboarding</li><li>Automated reminders</li></ul>",
+    "diagramPath": "/diagrams/fitness-automation.mmd"
+  }
+]
+

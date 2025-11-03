@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: "Portfolio pieces in systems development and operations architecture.",
 };
 
-export default function ProjectsPage() {
-  const projects = getProjects();
+export default async function ProjectsPage() {
+  const projects = await getProjects();
   return (
     <section>
       <h1 className="text-3xl font-semibold text-white">Projects</h1>
