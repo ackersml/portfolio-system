@@ -1,0 +1,18 @@
+flowchart TD
+  MB[macOS Menu Bar] --> ROUTER[Intent Router]
+  ROUTER --> LLM[Local Model]
+  ROUTER --> TOOLS[Tools]
+  subgraph Tools
+    CAL[Calendar]
+    NOTES[Notes]
+    SHELL[Shell Scripts]
+    SEARCH[File Search]
+    MAIL[Email]
+  end
+  TOOLS --> CAL
+  TOOLS --> NOTES
+  TOOLS --> SHELL
+  TOOLS --> SEARCH
+  TOOLS --> MAIL
+  LLM -. on-device .-> MB
+

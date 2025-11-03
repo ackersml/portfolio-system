@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProjectBySlug, getProjectSlugs } from "@/lib/projects";
 import PDFViewer from "@/components/PDFViewer";
+import Mermaid from "@/components/Mermaid";
 
 type Params = { slug: string };
 
@@ -28,25 +29,41 @@ export default function ProjectDetail({ params }: { params: Params }) {
         <p className="mt-2 text-zinc-400 max-w-2xl">{project.description}</p>
       </header>
 
-      <div className="flex items-center gap-3">
-        <a
-          href={project.pdf}
-          download
-          className="inline-flex items-center justify-center rounded-md bg-white text-black font-medium px-4 py-2 hover:bg-zinc-200 transition-colors"
-        >
-          Download PDF
-        </a>
-        <a
-          href={project.pdf}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-md border border-zinc-800 px-4 py-2 text-zinc-200 hover:bg-zinc-900 transition-colors"
-        >
-          Open in new tab
-        </a>
-      </div>
+      {project.body && (
+        <div
+          className="prose prose-invert max-w-none"
+          dangerouslySetInnerHTML={{ __html: project.body }}
+        />
+      )}
 
-      <PDFViewer src={project.pdf} title={project.title} />
+      {project.diagramPath && (
+        <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
+          <Mermaid path={project.diagramPath} />
+        </div>
+      )}
+
+      {project.pdf && (
+        <>
+          <div className="flex items-center gap-3">
+            <a
+              href={project.pdf}
+              download
+              className="inline-flex items-center justify-center rounded-md bg-white text-black font-medium px-4 py-2 hover:bg-zinc-200 transition-colors"
+            >
+              Download PDF
+            </a>
+            <a
+              href={project.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-md border border-zinc-800 px-4 py-2 text-zinc-200 hover:bg-zinc-900 transition-colors"
+            >
+              Open in new tab
+            </a>
+          </div>
+          <PDFViewer src={project.pdf} title={project.title} />
+        </>
+      )}
     </article>
   );
 }

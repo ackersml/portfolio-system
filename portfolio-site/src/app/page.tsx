@@ -6,7 +6,7 @@ export default function Home() {
       <div className="mx-auto max-w-3xl">
         <p className="text-sm text-zinc-400">Operations Architect</p>
         <h1 className="mt-2 text-3xl sm:text-5xl font-semibold tracking-tight text-white">
-          Systems development and operations architecture
+          Systems design and operations architecture
         </h1>
         <p className="mt-4 text-zinc-300 leading-relaxed">
           I specialize in end-to-end automation and local-first software solutions.
@@ -25,6 +25,24 @@ export default function Home() {
           >
             Contact
           </Link>
+        </div>
+        <div className="mt-10 space-y-3">
+          <details open className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
+            <summary className="cursor-pointer font-medium text-white">In plain language</summary>
+            <ul className="mt-2 list-disc pl-5 text-zinc-300">
+              <li>Turn messy processes into simple, reliable tools.</li>
+              <li>Replace spreadsheets with small apps that fit how you work.</li>
+              <li>Keep data local and in your control if you prefer no cloud.</li>
+            </ul>
+          </details>
+          <details className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
+            <summary className="cursor-pointer font-medium text-white">For engineers</summary>
+            <ul className="mt-2 list-disc pl-5 text-zinc-300">
+              <li>Local‑first patterns, sync, conflict handling, typed contracts.</li>
+              <li>On‑prem orchestration, background workers, observability.</li>
+              <li>Event pipelines, domain modeling, and operational runbooks.</li>
+            </ul>
+          </details>
         </div>
       </div>
     </section>

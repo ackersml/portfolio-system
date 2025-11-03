@@ -4,10 +4,12 @@ export type Project = {
   slug: string;
   title: string;
   description: string;
-  pdf: string;
+  pdf?: string;
   thumbnail?: string | null;
   tags?: string[];
   year?: number;
+  body?: string; // optional HTML string for richer content
+  diagramPath?: string; // optional path under public/ for a Mermaid .mmd file
 };
 
 export const projects: Project[] = projectsData as Project[];

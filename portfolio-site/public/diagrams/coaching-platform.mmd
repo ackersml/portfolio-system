@@ -1,0 +1,25 @@
+flowchart TD
+  subgraph Frontend
+    DASH[Dashboard]
+    DIR[Directory]
+    COURSES[Courses]
+    REPLAYS[Replays]
+    UPDATES[Updates]
+    PROFILE[Profile]
+    ADMIN[Admin]
+  end
+  subgraph Backend
+    DATA[(Data Store)]
+    BUS[(Events/Jobs)]
+  end
+  DASH --> DATA
+  DIR --> DATA
+  COURSES --> DATA
+  REPLAYS --> DATA
+  UPDATES --> DATA
+  PROFILE --> DATA
+  ADMIN --> DATA
+  DATA --> ANALYTICS[Analytics]
+  DATA -. triggers .-> BUS
+  BUS --> NOTIFY[Notifications]
+
