@@ -8,6 +8,7 @@ type Params = { slug: string };
 
 export const dynamic = "force-dynamic";
 export const dynamicParams = true;
+export const revalidate = 0;
 
 export function generateMetadata({ params }: { params: Params }): Metadata {
   const project = getProjectBySlug(params.slug);
@@ -20,7 +21,13 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
 
 export default function ProjectDetail({ params }: { params: Params }) {
   const project = getProjectBySlug(params.slug);
-  if (!project) return notFound();
+  if (!project)
+    return (
+      <article className="space-y-6">
+        <h1 className="text-2xl font-semibold text-white">Project</h1>
+        <p className="text-zinc-300">Project not found.</p>
+      </article>
+    );
   return (
     <article className="space-y-6">
       <header>
