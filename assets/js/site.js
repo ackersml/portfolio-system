@@ -102,7 +102,8 @@ async function renderProjectPage() {
     tags.appendChild(b);
   });
   article.appendChild(tags);
-
+  // Append early so content shows even if later steps fail
+  container.appendChild(article);
   // Rich body content (HTML string)
   if (project.body) {
     const body = document.createElement('div');
@@ -123,7 +124,12 @@ async function renderProjectPage() {
         } else if (window.mermaid.init) {
           window.mermaid.init(undefined, pre);
         }
-      } catch (_) {}
+      } catch (e) {
+        const msg = document.createElement('p');
+        msg.className = 'notice';
+        msg.textContent = 'Diagram unavailable.';
+        article.appendChild(msg);
+      }
     }
   };
   if (project.diagram) {
@@ -134,11 +140,19 @@ async function renderProjectPage() {
       if (resp.ok) {
         const txt = await resp.text();
         renderMermaid(txt);
+      } else {
+        const msg = document.createElement('p');
+        msg.className = 'notice';
+        msg.textContent = 'Diagram unavailable.';
+        article.appendChild(msg);
       }
-    } catch (_) {}
+    } catch (e) {
+      const msg = document.createElement('p');
+      msg.className = 'notice';
+      msg.textContent = 'Diagram unavailable.';
+      article.appendChild(msg);
+    }
   }
-
-  container.appendChild(article);
 }
 
 function init() {
