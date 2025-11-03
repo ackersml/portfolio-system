@@ -1,25 +1,8 @@
-graph TD
-  subgraph Channels
-    B2C[Shopfront (B2C)]
-    B2B[B2B Portal]
-  end
-  subgraph Core Systems
-    CRM[CRM]
-    INV[Inventory]
-    ACC[Accounting]
-    SHIP[Shipping]
-  end
-  B2C -->|Orders| CRM
-  B2B -->|Wholesale Orders| CRM
-  CRM -->|Sync| INV
-  CRM -->|Invoices| ACC
-  CRM -->|Fulfill| SHIP
-  INV -->|Stock Levels| CRM
-  ACC -->|Payment Status| CRM
-  SHIP -->|Tracking| CRM
-  ACC --> REPORTS[Reporting]
-  classDef core fill:#101826,stroke:#3f8fce,color:#e9eef3;
-  classDef chan fill:#0d1a23,stroke:#3f8fce,color:#e9eef3;
-  class CRM,INV,ACC,SHIP core;
-  class B2C,B2B chan;
+flowchart TD
+  B2C["Shopfront (B2C)"] --> CRM[CRM]
+  B2B["Wholesale Portal"] --> CRM
+  CRM --> INV["Inventory"]
+  CRM --> ACC["Accounting"]
+  CRM --> SHIP["Shipping"]
+  ACC --> REPORTS["Reporting"]
 
