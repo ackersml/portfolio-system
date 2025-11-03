@@ -26,22 +26,22 @@ const services = [
 export default function ServicesPage() {
   return (
     <section>
-      <h1 className="text-2xl font-semibold">Services</h1>
+      <h1 className="text-3xl font-semibold text-white">Services</h1>
       <p className="mt-2 text-zinc-400 max-w-2xl">
         Pragmatic systems design to fit constraints and scale.
       </p>
       <div className="mt-6 space-y-3">
-        <details open className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
+        <details open className="rounded-lg border border-zinc-700 bg-zinc-900 p-4">
           <summary className="cursor-pointer font-medium text-white">In plain language</summary>
-          <ul className="mt-2 list-disc pl-5 text-zinc-300">
+          <ul className="mt-2 list-disc pl-5 text-zinc-200">
             <li>Short, low‑risk milestones with visible progress.</li>
             <li>Simple first version you can use, then iterate.</li>
             <li>Runs on your machines; your data stays in your control.</li>
           </ul>
         </details>
-        <details className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
+        <details className="rounded-lg border border-zinc-700 bg-zinc-900 p-4">
           <summary className="cursor-pointer font-medium text-white">For engineers</summary>
-          <ul className="mt-2 list-disc pl-5 text-zinc-300">
+          <ul className="mt-2 list-disc pl-5 text-zinc-200">
             <li>Discovery → target state diagrams, domain models, sequence/ERD.</li>
             <li>MVP with typed APIs, background jobs, and observability.</li>
             <li>Hardening: zero‑downtime deploys, backups, telemetry, runbooks.</li>
