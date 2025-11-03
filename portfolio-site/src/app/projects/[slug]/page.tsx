@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getProjectBySlug, getProjectSlugs } from "@/lib/projects";
+import { getProjectBySlug } from "@/lib/projects";
 import PDFViewer from "@/components/PDFViewer";
 import Mermaid from "@/components/Mermaid";
 
 type Params = { slug: string };
 
-export function generateStaticParams() {
-  return getProjectSlugs().map((slug) => ({ slug }));
-}
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export function generateMetadata({ params }: { params: Params }): Metadata {
   const project = getProjectBySlug(params.slug);
