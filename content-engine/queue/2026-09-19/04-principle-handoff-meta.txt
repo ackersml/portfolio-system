@@ -1,0 +1,6 @@
+id: principle-handoff
+track: principle
+hookType: lesson
+platforms: linkedin
+eyebrow: How we build
+image: queue/2026-09-19/04-principle-handoff.png

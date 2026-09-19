@@ -1,0 +1,12 @@
+{
+  "name": "cornerstone-content-engine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "engine": "node engine.mjs",
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.1"
+  }
+}

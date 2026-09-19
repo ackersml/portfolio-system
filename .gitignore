@@ -3,4 +3,7 @@ portfolio-site/node_modules/
 portfolio-site/.next/
 portfolio-site/.vercel/
 portfolio-site/out/
+content-engine/node_modules/
+content-engine/test-results/
+content-engine/playwright-report/
 
