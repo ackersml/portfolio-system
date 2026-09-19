@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T21:36:30.399Z",
+  "mix": {
+    "sales": 3,
+    "principle": 1,
+    "note": "Sales are the majority track. About one principle post per three."
+  },
+  "drafts": [
+    {
+      "id": "sales-buy-local",
+      "track": "sales",
+      "hookType": "offer",
+      "platforms": [
+        "linkedin",
+        "instagram"
+      ],
+      "eyebrow": "What we build",
+      "hook": "You can run the tool on your own machines.",
+      "graphicLine": "Local software, bought or built to fit.",
+      "projectId": null,
+      "projectLine": null,
+      "ctaId": "seed:sales-buy-local",
+      "ctaPooled": false,
+      "linkedin": "You can run the tool on your own machines.\n\nNot every owner wants a long custom build. You may want a tool that lives on your network, keeps the data in your control, and does not need a new login every year.\n\nI can sell that as a packaged local tool, licensed per seat or per site, shaped to your room.\n\nIf the work is too specific for a package, we build it to fit. Either way, the software should still run when the wider internet is having a day.\n\nIf you would rather buy a local tool than commission a long build, write me and tell me what has to run on your machines.",
+      "instagram": "You can run the tool on your own machines.\n\nNot every owner wants a long custom build. You may want a tool that lives on your network, keeps the data in your control, and does not need a new login every year.\n\nI can sell that as a packaged local tool, licensed per seat or per site, shaped to your room.\n\nIf the work is too specific for a package, we build it to fit. Either way, the software should still run when the wider internet is having a day.\n\nIf you would rather buy a local tool than commission a long build, write me and tell me what has to run on your machines.\n\n#smallbusiness #operations #customsoftware #servicebusiness #localfirst",
+      "order": 1,
+      "stem": "01-sales-buy-local",
+      "image": "queue/2026-09-19/01-sales-buy-local.png"
+    },
+    {
+      "id": "sales-cloud-optional",
+      "track": "sales",
+      "hookType": "observation",
+      "platforms": [
+        "linkedin",
+        "instagram"
+      ],
+      "eyebrow": "What we build",
+      "hook": "The internet can drop. The work should not.",
+      "graphicLine": "Software that still runs on your network.",
+      "projectId": null,
+      "projectLine": null,
+      "ctaId": "lighter-week",
+      "ctaPooled": true,
+      "linkedin": "The internet can drop. The work should not.\n\nI care about tools you can run offline, on your own network, or fully on your machines.\n\nThat is not a posture. It is a Tuesday with a bad connection, a studio with a shared computer, a shop that should still take the next order.\n\nWe design for that first. Cloud can sit on top later if you want it. Your data stays in your control either way.\n\nIf this is the week you want the work to feel lighter, write me and tell me where it sticks.",
+      "instagram": "The internet can drop. The work should not.\n\nI care about tools you can run offline, on your own network, or fully on your machines.\n\nThat is not a posture. It is a Tuesday with a bad connection, a studio with a shared computer, a shop that should still take the next order.\n\nWe design for that first. Cloud can sit on top later if you want it. Your data stays in your control either way.\n\nIf this is the week you want the work to feel lighter, write me and tell me where it sticks.\n\n#smallbusiness #operations #customsoftware #servicebusiness #localfirst",
+      "order": 2,
+      "stem": "02-sales-cloud-optional",
+      "image": "queue/2026-09-19/02-sales-cloud-optional.png"
+    },
+    {
+      "id": "sales-day-one",
+      "track": "sales",
+      "hookType": "question",
+      "platforms": [
+        "linkedin",
+        "instagram"
+      ],
+      "eyebrow": "What we build",
+      "hook": "Where does a new client go on day one?",
+      "graphicLine": "A standard path, not a new invention each time.",
+      "projectId": "fitness-studio",
+      "projectLine": "Booking, payments, and client records for a fitness studio, instead of e-transfers and one-off invoices.",
+      "ctaId": "ordinary-week",
+      "ctaPooled": true,
+      "linkedin": "Where does a new client go on day one?\n\nIf the answer is \"it depends who asked,\" the week will keep asking you to invent the path again.\n\nI am not interested in a prettier form that still dumps the rest on you.\n\nWe put booking, payment, and the first-week steps in one path so a new client does not need you to narrate the business from memory.\n\nIf you want us to sit with the process first, start with one ordinary week and write me.",
+      "instagram": "Where does a new client go on day one?\n\nIf the answer is \"it depends who asked,\" the week will keep asking you to invent the path again.\n\nI am not interested in a prettier form that still dumps the rest on you.\n\nWe put booking, payment, and the first-week steps in one path so a new client does not need you to narrate the business from memory.\n\nIf you want us to sit with the process first, start with one ordinary week and write me.\n\n#smallbusiness #operations #customsoftware #servicebusiness #localfirst",
+      "order": 3,
+      "stem": "03-sales-day-one",
+      "image": "queue/2026-09-19/03-sales-day-one.png"
+    },
+    {
+      "id": "principle-handoff",
+      "track": "principle",
+      "hookType": "lesson",
+      "platforms": [
+        "linkedin"
+      ],
+      "eyebrow": "How we build",
+      "hook": "If you cannot hand it off, it is not finished.",
+      "graphicLine": "Clear ownership. A week someone else can run.",
+      "projectId": null,
+      "projectLine": null,
+      "ctaId": "replace-workaround",
+      "ctaPooled": true,
+      "linkedin": "If you cannot hand it off, it is not finished.\n\nI do not count a build as done because it works on my machine.\n\nDone means a person who was not in every meeting can run the ordinary week: where the file lives, what to do when a payment fails, who owns the next change.\n\nWe write that down. It is slower at the end and kinder for every month after.\n\nWhen you are ready to replace the workaround, I am here.",
+      "instagram": "",
+      "order": 4,
+      "stem": "04-principle-handoff",
+      "image": "queue/2026-09-19/04-principle-handoff.png"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "id": "sales-invoices-by-hand",
+    "hookType": "pain",
+    "projectId": "fitness-studio",
+    "eyebrow": "What we build",
+    "hook": "The invoice is still a design file.",
+    "graphicLine": "Booking, payments, and records in one place.",
+    "body": "If you are still sending e-transfers and rebuilding the invoice each time a session is booked, you are the system.\n\nI would rather you spend the hour with the client than reconstructing the same payment by hand.\n\nWe build booking, payments, and client records so a new person follows the same path you already decided, and the money and the calendar agree."
+  },
+  {
+    "id": "sales-one-shop",
+    "hookType": "contrast",
+    "projectId": "retail-wholesale",
+    "eyebrow": "What we build",
+    "hook": "Your shop should not live in five tabs.",
+    "graphicLine": "Customer orders and wholesale orders, together.",
+    "body": "One tab for the public shop. Another for wholesale. A spreadsheet for stock. A separate place for the invoice. Shipping somewhere else.\n\nThat is not a shop. That is a scavenger hunt you run every afternoon.\n\nWe build the store so customer orders and wholesale orders sit in one place, with invoices, stock, and shipping tied to the same record. You look once."
+  },
+  {
+    "id": "sales-day-one",
+    "hookType": "question",
+    "projectId": "fitness-studio",
+    "eyebrow": "What we build",
+    "hook": "Where does a new client go on day one?",
+    "graphicLine": "A standard path, not a new invention each time.",
+    "body": "If the answer is \"it depends who asked,\" the week will keep asking you to invent the path again.\n\nI am not interested in a prettier form that still dumps the rest on you.\n\nWe put booking, payment, and the first-week steps in one path so a new client does not need you to narrate the business from memory."
+  },
+  {
+    "id": "sales-held-by-memory",
+    "hookType": "observation",
+    "eyebrow": "What we build",
+    "hook": "Most service businesses are held together by memory.",
+    "graphicLine": "We map the week, then we build the missing home.",
+    "body": "You remember who paid. You remember who is waiting. You remember which version of the file is the real one.\n\nThat works until you are tired, or away, or simply wanted a Sunday.\n\nWe start by mapping how the week actually runs. Then we ship the simplest working software that gives those facts a home, on your machines if you want them local."
+  },
+  {
+    "id": "sales-buy-local",
+    "hookType": "offer",
+    "eyebrow": "What we build",
+    "hook": "You can run the tool on your own machines.",
+    "graphicLine": "Local software, bought or built to fit.",
+    "body": "Not every owner wants a long custom build. You may want a tool that lives on your network, keeps the data in your control, and does not need a new login every year.\n\nI can sell that as a packaged local tool, licensed per seat or per site, shaped to your room.\n\nIf the work is too specific for a package, we build it to fit. Either way, the software should still run when the wider internet is having a day.",
+    "cta": "If you would rather buy a local tool than commission a long build, write me and tell me what has to run on your machines."
+  },
+  {
+    "id": "sales-not-a-folder",
+    "hookType": "pain",
+    "projectId": "artist-archive",
+    "eyebrow": "What we build",
+    "hook": "An archive is more than a folder of files.",
+    "graphicLine": "Searchable work, a contact path, optional sales.",
+    "body": "A folder of images is not an archive. You cannot search it. A buyer cannot tell which piece is which. A booking request lands in an inbox you will open later.\n\nWe build a portfolio a maker can actually search: categories, details on each work, a contact and booking path that stores the request, and checkout only if you want to sell from the same place."
+  },
+  {
+    "id": "sales-stop-by-hand",
+    "hookType": "question",
+    "eyebrow": "What we build",
+    "hook": "What would you stop doing by hand this month?",
+    "graphicLine": "Name the workaround. We will give it a home.",
+    "body": "Not the dream version of the business. The thing you did twice yesterday because no tool owns it.\n\nI ask for one ordinary week, not a manifesto. We map the friction, then we build the smallest thing that removes it: a site, a members area, booking and payments, or a local tool that stays on your machines.\n\nYou should be able to use it quickly, with a clear path to the version you run for real."
+  },
+  {
+    "id": "sales-find-the-replay",
+    "hookType": "contrast",
+    "projectId": "coaching-community",
+    "eyebrow": "What we build",
+    "hook": "Members should not hunt for last week's replay.",
+    "graphicLine": "Courses, replays, and updates in one members area.",
+    "body": "If the course is in one place, the replay in a chat, and the update in an email you sent from your phone, your members are doing archaeology.\n\nWe build a members area with a simple map: directory, courses, replays, updates, profiles. Membership and permissions live in one layer. You get a quiet admin view of who is active and what you published, so you are not guessing from three inboxes.",
+    "cta": "If your members keep asking where the replay lives, write me and we can map a simpler home for it."
+  },
+  {
+    "id": "sales-cloud-optional",
+    "hookType": "observation",
+    "eyebrow": "What we build",
+    "hook": "The internet can drop. The work should not.",
+    "graphicLine": "Software that still runs on your network.",
+    "body": "I care about tools you can run offline, on your own network, or fully on your machines.\n\nThat is not a posture. It is a Tuesday with a bad connection, a studio with a shared computer, a shop that should still take the next order.\n\nWe design for that first. Cloud can sit on top later if you want it. Your data stays in your control either way."
+  },
+  {
+    "id": "sales-messy-week",
+    "hookType": "offer",
+    "eyebrow": "What we build",
+    "hook": "We start with one messy week.",
+    "graphicLine": "Discovery first. Then the smallest working thing.",
+    "body": "I do not need a polished brief. I need how Monday actually felt.\n\nWe sit with the current process, name the pain in plain language, and ship the simplest working software that fixes that pain. Short milestones. Clear ownership. A handoff you can run.\n\nIf you would rather buy a local package than build, say so. Both are honest paths."
+  },
+  {
+    "id": "sales-you-are-the-system",
+    "hookType": "pain",
+    "eyebrow": "What we build",
+    "hook": "If you are the system, the business waits on you.",
+    "graphicLine": "Give the week a place to live.",
+    "body": "Approvals in your head. Passwords in a note. The real price list in a thread only you can find.\n\nThat is devotion, and it is also a bottleneck with your name on it.\n\nWe turn that private map into software a colleague can run: the shop, the members area, the booking path, or a local helper on the desk. I want you out of the middle of every small decision."
+  },
+  {
+    "id": "sales-one-business",
+    "hookType": "contrast",
+    "projectId": "retail-wholesale",
+    "eyebrow": "What we build",
+    "hook": "Retail and wholesale are still one business.",
+    "graphicLine": "One record for stock, invoices, and shipping.",
+    "body": "The public shop and the wholesale book are not two companies. They share stock, they share invoices, they share the week.\n\nWhen those sides do not speak, you become the translation layer.\n\nWe build one place for both kinds of order, with stock kept in sync and shipping hooked to the same record. You should not need a third notebook to tell the truth."
+  },
+  {
+    "id": "sales-mac-on-the-desk",
+    "hookType": "offer",
+    "projectId": "mac-assistant",
+    "eyebrow": "What we build",
+    "hook": "Some of the help should live in the menu bar.",
+    "graphicLine": "A Mac helper that stays on the machine.",
+    "body": "Not every useful tool needs a new tab in the browser.\n\nWe have built a menu bar helper on a Mac for the small repeated work: open the app, find the file, draft the note, run the short workflow. It stays on the machine and can use on-device models when it can.\n\nIf your day is a pile of tiny lookups, that is a design problem, not a character flaw."
+  },
+  {
+    "id": "sales-same-map",
+    "hookType": "question",
+    "projectId": "saas-process-map",
+    "eyebrow": "What we build",
+    "hook": "Is your team building the same thing?",
+    "graphicLine": "A shared map of how the work should flow.",
+    "body": "If two people can draw two different pictures of the same week, the software will pick a third.\n\nI will sit in the unglamorous work of mapping how the product should move, where one system ends and the next begins, and what an event actually means.\n\nThat map is for the owner as much as the builder. You should be able to read it without a glossary."
+  }
+]

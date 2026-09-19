@@ -1,0 +1,4 @@
+queue/2026-09-19/01-sales-buy-local.png
+queue/2026-09-19/02-sales-cloud-optional.png
+queue/2026-09-19/03-sales-day-one.png
+queue/2026-09-19/04-principle-handoff.png

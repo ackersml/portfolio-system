@@ -1,0 +1,6 @@
+id: sales-cloud-optional
+track: sales
+hookType: observation
+platforms: linkedin, instagram
+eyebrow: What we build
+image: queue/2026-09-19/02-sales-cloud-optional.png

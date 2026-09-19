@@ -1,0 +1,7 @@
+id: sales-day-one
+track: sales
+hookType: question
+platforms: linkedin, instagram
+eyebrow: What we build
+image: queue/2026-09-19/03-sales-day-one.png
+projectLine: Booking, payments, and client records for a fitness studio, instead of e-transfers and one-off invoices.

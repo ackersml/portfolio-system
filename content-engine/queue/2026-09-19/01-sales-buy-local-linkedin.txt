@@ -1,0 +1,9 @@
+You can run the tool on your own machines.
+
+Not every owner wants a long custom build. You may want a tool that lives on your network, keeps the data in your control, and does not need a new login every year.
+
+I can sell that as a packaged local tool, licensed per seat or per site, shaped to your room.
+
+If the work is too specific for a package, we build it to fit. Either way, the software should still run when the wider internet is having a day.
+
+If you would rather buy a local tool than commission a long build, write me and tell me what has to run on your machines.

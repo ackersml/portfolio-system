@@ -1,0 +1,58 @@
+[
+  {
+    "id": "principle-map-first",
+    "hookType": "lesson",
+    "eyebrow": "How we build",
+    "hook": "Map the week before you build the tool.",
+    "graphicLine": "The process is the brief.",
+    "body": "I do not start in a file. I start in the week.\n\nWho waits. What gets copied. Which number people trust. If I skip that, I will build a clean tool for a process nobody actually runs.\n\nWe write the map in language the owner can correct. Then we build the smallest thing that matches it. A diagram that only an engineer can read is not a gift."
+  },
+  {
+    "id": "principle-smallest-thing",
+    "hookType": "observation",
+    "eyebrow": "How we build",
+    "hook": "The smallest working thing wins the week.",
+    "graphicLine": "Use it, then decide the next step.",
+    "body": "I would rather you run a plain first version on Thursday than wait for a perfect one in two months.\n\nA first version that does the painful job is information. A long plan with no software is a mood.\n\nWe keep the milestone short on purpose. You can feel whether the pain moved. Then we decide the next honest step, including the decision to stop."
+  },
+  {
+    "id": "principle-handoff",
+    "hookType": "lesson",
+    "eyebrow": "How we build",
+    "hook": "If you cannot hand it off, it is not finished.",
+    "graphicLine": "Clear ownership. A week someone else can run.",
+    "body": "I do not count a build as done because it works on my machine.\n\nDone means a person who was not in every meeting can run the ordinary week: where the file lives, what to do when a payment fails, who owns the next change.\n\nWe write that down. It is slower at the end and kinder for every month after."
+  },
+  {
+    "id": "principle-maps-not-product",
+    "hookType": "contrast",
+    "eyebrow": "How we build",
+    "hook": "A process map is not the product.",
+    "graphicLine": "The map earns the build. It is not the build.",
+    "body": "I like a clear map. I will not leave you with a map and a wave.\n\nThe product is the tool in the week: the shop, the members area, the booking path, the local helper. The map is how we agree what that tool is for.\n\nIf a page of boxes cannot survive contact with Monday, we revise the page. We do not ship the boxes and call it transformation."
+  },
+  {
+    "id": "principle-offline",
+    "hookType": "question",
+    "eyebrow": "How we build",
+    "hook": "Does this still work when the internet does not?",
+    "graphicLine": "Offline, on the LAN, or on your machines.",
+    "body": "I ask this earlier than most people find polite.\n\nIf the answer is no, the business has a silent dependency it will meet on a bad afternoon. We design for local first: the record is on your side, the ordinary action still completes, the sync can wait.\n\nThat constraint makes better software even on a good connection. It forces us to know what the work actually needs."
+  },
+  {
+    "id": "principle-tuesday",
+    "hookType": "lesson",
+    "eyebrow": "How we build",
+    "hook": "I write for the person who will run it on a Tuesday.",
+    "graphicLine": "Plain language. No private glossary.",
+    "body": "If the only person who understands the system is the person who built it, we built a trap.\n\nI write names, buttons, and handoff notes for the person who opens it between two other jobs. They should not need my voice in their ear.\n\nWe keep the language plain on purpose. Stack words are for our notes. Your screen gets the project in the words you already use."
+  },
+  {
+    "id": "principle-one-reader",
+    "hookType": "observation",
+    "eyebrow": "How we build",
+    "hook": "Build for one real week, not a generic market.",
+    "graphicLine": "Specific beats a template.",
+    "body": "I get more truth from one messy calendar than from a category trend.\n\nA fitness studio that still invoices by hand is not \"a wellness brand.\" A shop with two kinds of order is not \"an ecommerce play.\" Those phrases hide the work.\n\nWe stay with the specific week you already have. The software gets simpler when we stop pretending you are a type."
+  }
+]

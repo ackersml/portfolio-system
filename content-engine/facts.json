@@ -1,0 +1,117 @@
+{
+  "brand": {
+    "name": "Cornerstone Devs",
+    "voice": "Michelle",
+    "instagram": "@cornerstonedevs",
+    "reader": "one owner or operator"
+  },
+  "voiceRules": {
+    "i": "judgement, preference, what I will and will not do",
+    "we": "the work the team builds",
+    "you": "the single reader"
+  },
+  "about": [
+    "I am a systems and operational architect. I translate complex workflows into maintainable systems and working software.",
+    "I focus on software that can run offline, on a local network, or fully on your machines.",
+    "My background spans operational architecture, design systems, workflow design, and implementation on the web and on the desktop.",
+    "How I work: collaborative discovery, then a first working version, then a version you can run for real, with documentation and a clear handoff."
+  ],
+  "servicesPlain": [
+    "Map how the week actually runs, then ship the simplest working software that fixes the pain.",
+    "Custom websites and platforms for service businesses.",
+    "Booking, payments, and client records in one place, so you stop stitching them by hand.",
+    "Software that runs on your own machines and keeps your data local.",
+    "Packaged, locally hosted tools if you would rather buy than commission a build. Licensing can be per seat or per site.",
+    "Short milestones, clear ownership, and a handoff you can run without me sitting in the file."
+  ],
+  "engagements": [
+    "Discovery and architecture: assess needs and design the target workflow.",
+    "First working version: de-risk the decision with something you can use.",
+    "Build and deploy: a version you can run, with documentation.",
+    "Support and iteration: keep improving what is already in use."
+  ],
+  "projects": [
+    {
+      "id": "retail-wholesale",
+      "line": "A shop that takes customer orders and wholesale orders in one place, with invoices, stock, and shipping tied together.",
+      "role": "Operations architect and systems designer",
+      "does": [
+        "Customer storefront",
+        "Wholesale portal",
+        "Client records",
+        "Invoicing",
+        "Stock kept in sync",
+        "Shipping hooked to the order",
+        "One report across both kinds of order"
+      ],
+      "documentedOutcomes": [
+        "The project writeup lists a large drop in manual admin and enough room in the system for a much higher order volume.",
+        "Reporting sits in one place for customer orders and wholesale orders."
+      ]
+    },
+    {
+      "id": "coaching-community",
+      "line": "A members area for a coaching business: directory, courses, replays, updates, profiles, and a simple way to see who is active.",
+      "role": "Operations architect and systems designer",
+      "does": [
+        "Clearer navigation and content model",
+        "Membership and permissions in one layer",
+        "Admin view of revenue, engagement, and publishing rhythm",
+        "Messages and lifecycle notes that fire from events, not from memory"
+      ]
+    },
+    {
+      "id": "mac-assistant",
+      "line": "A menu bar helper on a Mac for everyday actions, kept on the machine.",
+      "role": "Systems designer and developer",
+      "does": [
+        "Launch apps",
+        "Find files",
+        "Short summaries",
+        "Email drafts and notes",
+        "Scripted workflows",
+        "Uses on-device models when it can"
+      ]
+    },
+    {
+      "id": "artist-archive",
+      "line": "A portfolio and archive a maker can search, with a contact form, booking, and optional direct sales.",
+      "role": "Systems designer",
+      "does": [
+        "Gallery with image details and categories",
+        "Contact and booking with storage and a notification",
+        "Optional checkout for a direct sale"
+      ]
+    },
+    {
+      "id": "fitness-studio",
+      "line": "Booking, payments, and client records for a fitness studio, instead of e-transfers and one-off invoices.",
+      "role": "Operations architect and systems designer",
+      "does": [
+        "Payments in the same place as the booking",
+        "A standard path for a new client",
+        "Less admin in the week"
+      ]
+    },
+    {
+      "id": "saas-process-map",
+      "line": "A map of how a software product's work should flow, so the team is building the same thing.",
+      "role": "Systems designer",
+      "does": [
+        "End to end process mapping",
+        "Clear edges between systems",
+        "Event flows and data shapes"
+      ]
+    },
+    {
+      "id": "saas-workflow",
+      "line": "The day to day job flow for a software product: what runs in the background, and how you see if it worked.",
+      "role": "Systems designer",
+      "does": [
+        "Workflow diagrams",
+        "Background jobs and schedules",
+        "A way to see a run and recover it"
+      ]
+    }
+  ]
+}

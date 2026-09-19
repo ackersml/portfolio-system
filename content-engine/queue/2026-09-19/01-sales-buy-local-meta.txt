@@ -1,0 +1,6 @@
+id: sales-buy-local
+track: sales
+hookType: offer
+platforms: linkedin, instagram
+eyebrow: What we build
+image: queue/2026-09-19/01-sales-buy-local.png
