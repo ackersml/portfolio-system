@@ -19,36 +19,14 @@ function getQueryParam(name) {
   return url.searchParams.get(name);
 }
 
-/* Scroll-reveal: adds .is-visible when a .reveal element enters the viewport.
-   The transition itself is gated behind prefers-reduced-motion in CSS. */
-let revealObserver = null;
-function initReveal() {
-  document.documentElement.classList.add('js');
-  if (!('IntersectionObserver' in window)) {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
-    return;
-  }
-  revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-}
-
-function observeReveal(el) {
-  el.classList.add('reveal');
-  if (revealObserver) revealObserver.observe(el);
-  else el.classList.add('is-visible');
-}
-
 function createProjectCard(project) {
   const a = document.createElement('a');
   a.href = `project.html?slug=${encodeURIComponent(project.slug)}`;
   a.className = 'card';
+  const title = document.createElement('h3');
+  title.textContent = project.title;
+  const summary = document.createElement('p');
+  summary.textContent = project.summary || '';
   const tags = document.createElement('div');
   (project.tags || []).forEach(t => {
     const b = document.createElement('span');
@@ -56,19 +34,9 @@ function createProjectCard(project) {
     b.textContent = t;
     tags.appendChild(b);
   });
-  const title = document.createElement('h3');
-  title.textContent = project.title;
-  const summary = document.createElement('p');
-  summary.textContent = project.summary || '';
   a.appendChild(tags);
   a.appendChild(title);
   a.appendChild(summary);
-  if (project.role) {
-    const meta = document.createElement('div');
-    meta.className = 'meta';
-    meta.textContent = project.role;
-    a.appendChild(meta);
-  }
   return a;
 }
 
@@ -83,11 +51,7 @@ async function renderProjectsPage() {
     grid.parentElement.appendChild(msg);
     return;
   }
-  projects.forEach(p => {
-    const card = createProjectCard(p);
-    grid.appendChild(card);
-    observeReveal(card);
-  });
+  projects.forEach(p => grid.appendChild(createProjectCard(p)));
 }
 
 async function renderProjectPage() {
@@ -99,9 +63,9 @@ async function renderProjectPage() {
   if (!project) {
     container.innerHTML = `<p class="notice">Project not found.</p>`;
     return;
-  }
+    }
   // Update document title and meta tags for SEO/social
-  document.title = `${project.title} - Michelle Ackers`;
+  document.title = `${project.title} — Project`;
   const ensureMeta = (selector, createFn) => {
     let el = document.querySelector(selector);
     if (!el) { el = createFn(); document.head.appendChild(el); }
@@ -193,7 +157,6 @@ async function renderProjectPage() {
 
 function init() {
   setYear();
-  initReveal();
   const page = document.body.getAttribute('data-page');
   if (page === 'projects') renderProjectsPage();
   if (page === 'project') renderProjectPage();
