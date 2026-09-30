@@ -1,10 +1,14 @@
 [
   {
     "slug": "client-a-digitization",
-    "title": "Client A — Retail & Wholesale Digitization",
+    "title": "Client A: Retail & Wholesale Digitization",
     "date": "",
     "role": "Operations Architect & Systems Designer",
-    "tags": ["E‑commerce", "Automation", "CRM"],
+    "tags": [
+      "E‑commerce",
+      "Automation",
+      "CRM"
+    ],
     "summary": "Built end‑to‑end operational infrastructure for a retail/wholesale business: B2C storefront, B2B portal, CRM, invoicing, inventory sync, and shipping integration. Reduced manual work ~80% and enabled 10× order capacity.",
     "links": [],
     "cover": "",
@@ -14,11 +18,15 @@
   },
   {
     "slug": "client-b-coaching-platform",
-    "title": "Client B — Coaching/Community Platform Systems",
+    "title": "Client B: Coaching/Community Platform Systems",
     "date": "",
     "role": "Operations Architect & Systems Designer",
-    "tags": ["Community", "Email", "Conversion"],
-    "summary": "Custom system build: simplified information architecture, unified membership and content modules, and admin analytics for revenue, engagement, and publishing — with a privacy‑respecting data store and portable schema.",
+    "tags": [
+      "Community",
+      "Email",
+      "Conversion"
+    ],
+    "summary": "Custom system build: simplified information architecture, unified membership and content modules, and admin analytics for revenue, engagement, and publishing, with a privacy‑respecting data store and portable schema.",
     "links": [],
     "cover": "",
     "assets": [],
@@ -27,10 +35,14 @@
   },
   {
     "slug": "mac-assistant",
-    "title": "Mac Assistant — Local AI Automation",
+    "title": "Mac Assistant: Local AI Automation",
     "date": "",
     "role": "Systems Designer & Developer",
-    "tags": ["macOS", "Local AI", "Automation"],
+    "tags": [
+      "macOS",
+      "Local AI",
+      "Automation"
+    ],
     "summary": "A local, privacy‑first macOS menu bar assistant for quick actions: launch apps, file search, summaries, email drafts, and scripted workflows. Uses on‑device models when possible with pluggable tools for calendar, notes, and shell commands.",
     "links": [],
     "cover": "",
@@ -40,10 +52,14 @@
   },
   {
     "slug": "artist-archive-commerce",
-    "title": "Client D — Artist Portfolio & Archive System",
+    "title": "Client D: Artist Portfolio & Archive System",
     "date": "",
     "role": "Systems Designer",
-    "tags": ["Portfolio", "Archive", "E‑commerce"],
+    "tags": [
+      "Portfolio",
+      "Archive",
+      "E‑commerce"
+    ],
     "summary": "Custom responsive portfolio with gallery system, image metadata, categorization, contact/booking forms with backend storage and notifications, and optional e‑commerce for direct sales.",
     "links": [],
     "cover": "",
@@ -53,10 +69,14 @@
   },
   {
     "slug": "client-c-fitness-automation",
-    "title": "Client C — Fitness Operations Automation",
+    "title": "Client C: Fitness Operations Automation",
     "date": "",
     "role": "Operations Architect & Systems Designer",
-    "tags": ["Payments", "Scheduling", "CRM"],
+    "tags": [
+      "Payments",
+      "Scheduling",
+      "CRM"
+    ],
     "summary": "Replaced manual e‑transfers and Canva invoices with integrated payments, scheduling, and CRM. Standardized onboarding and reduced admin overhead.",
     "links": [],
     "cover": "",
@@ -69,7 +89,10 @@
     "title": "SaaS Business Process Architecture",
     "date": "",
     "role": "Systems Designer",
-    "tags": ["SaaS", "Architecture"],
+    "tags": [
+      "SaaS",
+      "Architecture"
+    ],
     "summary": "Business process architecture for SaaS operations.",
     "links": [],
     "cover": "",
@@ -82,7 +105,10 @@
     "title": "SaaS Workflow Design",
     "date": "",
     "role": "Systems Designer",
-    "tags": ["SaaS", "Workflow"],
+    "tags": [
+      "SaaS",
+      "Workflow"
+    ],
     "summary": "Workflow design for SaaS systems.",
     "links": [],
     "cover": "",
@@ -91,4 +117,3 @@
     "diagramPath": "diagrams/saas-workflow.mmd"
   }
 ]
-

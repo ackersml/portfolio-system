@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Michelle Ackers — Systems Development</title>
-  <meta name="description" content="Systems development portfolio. Local-first software, on-prem solutions, and robust systems design.">
-  <meta property="og:title" content="Michelle Ackers — Systems Development">
-  <meta property="og:description" content="Systems development portfolio. Local-first software, on-prem solutions, and robust systems design.">
+  <title>Michelle Ackers - Systems Design & Development</title>
+  <meta name="description" content="Systems design portfolio. Local-first software, on-prem solutions, and robust systems design.">
+  <meta property="og:title" content="Michelle Ackers - Systems Design & Development">
+  <meta property="og:description" content="Systems design portfolio. Local-first software, on-prem solutions, and robust systems design.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Michelle Ackers — Systems Development">
-  <meta name="twitter:description" content="Systems development portfolio. Local-first software, on-prem solutions, and robust systems design.">
+  <meta name="twitter:title" content="Michelle Ackers - Systems Design & Development">
+  <meta name="twitter:description" content="Systems design portfolio. Local-first software, on-prem solutions, and robust systems design.">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Michelle Ackers","email":"mailto:ackers.ml@gmail.com","url":"https://ackersml.github.io/portfolio-system/","jobTitle":"Systems Designer & Developer"}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/geist-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/geist-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="home">
@@ -32,30 +32,55 @@
 
   <main>
     <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Systems that run on your machines</h1>
+          <p class="lead">Workflow design, operational architecture, and working software for local-first and on-prem environments.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects.html">View portfolio</a>
+            <a class="btn" href="contact.html">Start a project</a>
+          </div>
+        </div>
+        <figure class="hero-panel reveal">
+          <img src="assets/img/system-map.svg" alt="Architecture diagram: B2C shopfront and wholesale portal feeding a CRM, connected to inventory, accounting, shipping, and reporting" width="552" height="306" fetchpriority="high">
+          <figcaption>Order and inventory flow from a retail digitization engagement.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Selected outcomes">
       <div class="container">
-        <h1>Systems design and operations for local‑first and on‑prem software</h1>
-        <p class="lead">I design and build robust systems that work offline, on your LAN, or fully on‑prem. From workflows and architecture to working software.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="services.html">Explore services</a>
-          <a class="btn" href="projects.html">View portfolio</a>
+        <div class="metric reveal">
+          <strong>~80%</strong>
+          <span>less manual admin after one retail digitization build</span>
+        </div>
+        <div class="metric reveal">
+          <strong>10x</strong>
+          <span>order capacity readiness on the same engagement</span>
+        </div>
+        <div class="metric reveal">
+          <strong>7</strong>
+          <span>systems designed and shipped across retail, fitness, and SaaS</span>
         </div>
       </div>
     </section>
 
     <section class="highlight">
       <div class="container two-col">
-        <div>
-          <h2>What I do</h2>
+        <div class="reveal">
+          <h2>What I build</h2>
           <ul class="checklist">
-            <li>Local‑first desktop and web apps</li>
-            <li>On‑premise deployments (air‑gapped friendly)</li>
+            <li>Local-first desktop and web apps</li>
+            <li>On-premise deployments, air-gapped friendly</li>
             <li>Operational and systems architecture</li>
-            <li>Automation and integration (APIs, CLIs, services)</li>
+            <li>Automation and integration: APIs, CLIs, services</li>
             <li>Data pipelines and internal tools</li>
           </ul>
+        </div>
+        <div class="reveal">
           <details class="audience" open>
             <summary>In plain language</summary>
-            <p>I help teams turn messy processes into reliable software. Think: tools that work without the cloud, run on your own network, and are easy to use every day.</p>
+            <p>I help teams turn messy processes into reliable software. Tools that work without the cloud, run on your own network, and are easy to use every day.</p>
             <ul class="checklist">
               <li>Make current workflows faster and clearer</li>
               <li>Replace spreadsheets with simple apps</li>
@@ -65,36 +90,52 @@
           <details class="audience">
             <summary>For engineers</summary>
             <ul class="checklist">
-              <li>CRDT/local‑first patterns, sync, conflict handling</li>
-              <li>On‑prem orchestration, offline‑first UX, background workers</li>
+              <li>CRDT and local-first patterns, sync, conflict handling</li>
+              <li>On-prem orchestration, offline-first UX, background workers</li>
               <li>Typed APIs, event pipelines, observability, automated deploys</li>
             </ul>
           </details>
         </div>
-        <div>
-          <h2>How I work</h2>
-          <ul class="checklist">
-            <li>Collaborative discovery and solution design</li>
-            <li>Prototype → MVP → Production</li>
-            <li>Security, resilience, and maintainability first</li>
-            <li>Clear documentation and handoff</li>
-          </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">How I work</h2>
+        <div class="process">
+          <div class="step reveal">
+            <h3>Discover</h3>
+            <p>Map the current process together and agree on the target state.</p>
+          </div>
+          <div class="step reveal">
+            <h3>Prototype</h3>
+            <p>De-risk decisions with the simplest working version of the fix.</p>
+          </div>
+          <div class="step reveal">
+            <h3>Ship</h3>
+            <p>Production build with security, resilience, and maintainability first.</p>
+          </div>
+          <div class="step reveal">
+            <h3>Hand off</h3>
+            <p>Clear documentation, runbooks, and ownership from day one.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cta">
       <div class="container">
-        <h2>Have a systems problem to solve?</h2>
-        <p>Tell me about your context. I’ll propose an approach and a path to a working solution.</p>
-        <a class="btn btn-primary" href="contact.html">Start a project</a>
+        <h2 class="reveal">Have a systems problem to solve?</h2>
+        <p class="reveal">Tell me about your context. I will propose an approach and a path to a working solution.</p>
+        <a class="btn btn-primary reveal" href="contact.html">Start a project</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Michelle Ackers. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Michelle Ackers. All rights reserved.</p>
+      <a href="mailto:ackers.ml@gmail.com">ackers.ml@gmail.com</a>
     </div>
   </footer>
 
