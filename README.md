@@ -42,3 +42,8 @@ After deploying, update:
 ## Notes
 - Project detail SEO updates dynamically from `content/projects.json`.
 - PDFs are loaded directly from the repo; no external hosting needed.
+
+## AI design toolkit
+Claude Code skills for design work on this site live in `.claude/skills/` — direction
+inference (taste), brand DESIGN.md references, image-to-code, a Web Interface Guidelines
+audit, and Playwright CLI browser verification. See `.claude/skills/README.md`.
