@@ -3,17 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project — Detail</title>
+  <title>Project - Michelle Ackers</title>
   <meta name="description" content="Project case study.">
-  <meta property="og:title" content="Project — Detail">
+  <meta property="og:title" content="Project - Michelle Ackers">
   <meta property="og:description" content="Project case study.">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Project — Detail">
+  <meta name="twitter:title" content="Project - Michelle Ackers">
   <meta name="twitter:description" content="Project case study.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script>mermaid.initialize({ startOnLoad: false, theme: 'dark', securityLevel: 'loose' });</script>
+  <script>
+    if (window.mermaid) mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: 'loose',
+      theme: 'base',
+      themeVariables: {
+        fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
+        fontSize: '14px',
+        primaryColor: '#e4efe9',
+        primaryTextColor: '#191d1b',
+        primaryBorderColor: '#1f6f54',
+        lineColor: '#1f6f54',
+        secondaryColor: '#ffffff',
+        tertiaryColor: '#f7f8f7',
+        clusterBkg: '#ffffff',
+        clusterBorder: '#e3e7e4',
+        edgeLabelBackground: '#f7f8f7'
+      }
+    });
+  </script>
 </head>
 <body data-page="project">
   <header class="site-header">
@@ -34,7 +54,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Michelle Ackers.</p>
+      <p>&copy; <span id="year"></span> Michelle Ackers.</p>
+      <a href="mailto:ackers.ml@gmail.com">ackers.ml@gmail.com</a>
     </div>
   </footer>
 
